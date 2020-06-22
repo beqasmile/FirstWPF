@@ -1,0 +1,72 @@
+﻿<Window x:Class="FirstWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Row0 Column0" Grid.Row="0" Grid.Column="0" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <Button Click="Button_Click" Grid.Row="0" Grid.Column="1" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center">Open Excel Doc</Button>
+        
+        <TextBlock Text="Row0 Column2" Grid.Row="0" Grid.Column="2" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Text="Row1 Column0" Grid.Row="1" Grid.Column="0" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+            <TextBlock Text="Stack Panel Text 1"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock Text="Stack Panel Text 2"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock Text="Stack Panel Text 3"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock Text="Stack Panel Text 4"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
+
+
+        <Grid ShowGridLines="True" Grid.Row="1" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Row0 Column0" Grid.Row="0" Grid.Column="0" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock Text="Row0 Column1" Grid.Row="0" Grid.Column="1" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock Text="Row0 Column2" Grid.Row="0" Grid.Column="2" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock Text="Row1 Column0" Grid.Row="1" Grid.Column="0" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+                <TextBlock Text="Stack Panel Text 1"  FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Text="Stack Panel Text 2"  FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Text="Stack Panel Text 3"  FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Text="Stack Panel Text 4"  FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            </StackPanel>
+
+
+
+            <TextBlock Text="Row1 Column2" Grid.Row="1" Grid.Column="2" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <Canvas  Grid.Row="2" Grid.Column="0">
+                <Ellipse Fill="Gainsboro" Canvas.Left="25" Canvas.Top="25" Width="100" Height="100" />
+                <Rectangle Fill="LightBlue" Canvas.Left="25" Canvas.Top="25" Width="20" Height="30" />
+                <Rectangle Fill="LightCoral" Canvas.Left="50" Canvas.Top="50" Width="20" Height="30" />
+                <Rectangle Fill="LightCyan" Canvas.Left="75" Canvas.Top="75" Width="20" Height="30" />
+            </Canvas>
+            <TextBlock Text="Row2 Column1" Grid.Row="2" Grid.Column="1" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock Text="Row2 Column2" Grid.Row="2" Grid.Column="2" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </Grid>
+        <TextBlock Text="Row2 Column0" Grid.Row="2" Grid.Column="0" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Text="Row2 Column1" Grid.Row="2" Grid.Column="1" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        
+        
+    </Grid>
+</Window>
